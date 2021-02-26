@@ -1,0 +1,75 @@
+.modal {
+    overflow-y: scroll;
+    scrollbar-color: black white;
+    scrollbar-width: thin;
+    scrollbar-arrow-color: black;
+    font-family: 'Share Tech Mono', monospace;
+
+}
+
+.modal-content {
+    background-color: #020202;
+    border-radius: 0;
+    color: white;
+    font-size: 1.65em;
+    overflow-x: hidden;
+    border-style: solid;
+    border-color: white;
+
+}
+
+
+.close {
+    color: white;
+    font-size: 1.8em;
+
+}
+
+.close:hover {
+    color: red;
+}
+
+.modal-header {
+    border-color: white;
+    border-style: solid;
+    border-radius: 0;
+
+}
+
+.modal-footer {
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 0;
+}
+
+#avatar {
+    left: 20%;
+}
+
+hr {
+    color: white;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: green;
+    border-color: green;
+
+}
+
+.btn-secondary {
+    color: whie;
+    background-color: rgb(109, 0, 0);
+    border-color: rgb(109, 0, 0);
+}
+
+.btn-secondary:hover {
+    background-color: red;
+    border-color: red;
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MCC95</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="text/javascript" charset="UTF-8" src="https://threejs.org/build/three.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="javascript/three.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="javascript/OrbitControls.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="javascript/Stats.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="javascript/util.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="shader/EffectComposer.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="shader/RenderPass.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="shader/ShaderPass.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="shader/MaskPass.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="shader/CopyShader.js">
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="shader/FilmShader.js">
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="shader/RGBShiftShader.js">
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="shader/PixelShader.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="badTVShader/BadTVShader.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="badTVShader/StaticShader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png" size="32x32">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='javascript/main.js'>
+    </script>
+</head>
+
+<body>
+
+    <div id="webgl_content">
+        <div class="container1">
+            <p id="container1_row1">COMMING SOON</p>
+
+            <p id="container1_row2"><a href="https://mcc95.info/">
+                    <img id="logoImg" src="images/logo.png"></a></p>
+
+            <p id="container1_row3">2020</p>
+        </div>
+
+
+        <div class="container2">
+            <p id="container1_row1"><img src="images/links_oben.png"></p>
+
+            <p></p>
+
+            <p id="container1_row2"><img src="images/rechts_oben.png"></p>
+        </div>
+
+        <div class="container3">
+
+        </div>
+
+        <div class="container4">
+            <p id="container1_row1"><img src="images/links_unten.png"></p>
+            <p></p>
+
+
+            <p id="container1_row2"><img src="images/rechts_unten.png"></p>
+
+
+        </div>
+
+
+        <div class="container5">
+
+            <p id="container5_row"><button class="popupButton" id="aboutBtn" data-toggle="modal"
+                    data-target="#modalCenterAbout">ABOUT</button></p>
+
+            <p id="container5_row2"><button class="popupButton" id="projectBtn" data-toggle="modal"
+                    data-target="#modalCenterProjects">PROJECTS</button></p>
+
+
+            <p id="container5_row3"><button class="popupButton" id="contactBtn" data-toggle="modal"
+                    data-target="#modalCenterContact">CONTACT</button></p>
+        </div>
+
+
+        <!-- Modal About -->
+        <div class="modal fade" id="modalCenterAbout" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLongTitle">About</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cointainer-fluid">
+                            <div class="row">
+
+
+                                <div class="col-md-6 ml-auto">Hallo, mein Name ist Mehmet Can Celik und ich begrüße Sie
+                                    auf meiner Seite!
+                                    <br>
+                                    <br>
+                                    <p>Nun zu meiner Person: Ich bin 25 Jahre alt und studiere Medieninformatik. Ich
+                                        habe
+                                        diese Webseite
+                                        erstellt um Personen für Projekte oder derartiges zu gewinnen. Auch will ich
+                                        hier
+                                        mein können unter beweis stellen.</p>
+                                    <br>
+
+                                    <p>
+                                        Diese Webseite ist keine herkömmliche Webseite, da der komplette Hintergrund in
+                                        3D gerendert wird. Durch den WebGL renderer ist es möglich 3D Modelle oder 3D
+                                        Szenen im Hintergrund zu rendern. Dies hat viele Vorteile wie z.B. die
+                                        User-Interaktion oder das 3 Dimensionale betrachten von Produkten.
+                                    </p>
+                                    <br>
+
+                                    <p>
+                                        Meine Webseite wird ständig erweitert und weiterentwickelt. Ich versuche mir
+                                        durch Bücher und dem Internet alles beizubringen.
+                                    </p>
+                                    <br>
+
+                                    <p>Bis jetzt habe ich für diese Seite HTML5, CSS, Javascript, Bootstrap und Three.Js
+                                        genutzt. Der Stack wird sich durch kommende Projekte stark erweitern</p>
+
+                                </div>
+                                <div class="col-md-6 ml-auto" id="avatar"><img src="images/avatar.png">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modalCenterProjects" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLongTitle">Projects</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cointainer-fluid">
+                            <div class="row">
+                                <div class="col-md-6 ml-auto">
+                                    <p>Gallery</p>
+                                    <p>10-2020</p>
+                                    <p><a href="project1.html"><img src="images/platzhalter.png"></a></p>
+
+                                    <br>
+
+                                    <p>Projektname</p>
+                                    <p>datum</p>
+                                    <p><img src="images/platzhalter.png"></p>
+
+                                </div>
+                                <div class="col-md-6 ml-auto">
+                                    <p>Projektname</p>
+                                    <p>datum</p>
+                                    <p><img src="images/platzhalter.png"></p>
+
+                                    <br>
+
+                                    <p>Projektname</p>
+                                    <p>datum</p>
+                                    <p><img src="images/platzhalter.png"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Modal Contact -->
+        <div class="modal fade" id="modalCenterContact" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLongTitle">Contact</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Sender:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Nachricht:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Absenden</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        (function () {
+            init()
+        })();
+    </script>
+
+
+</body>
+
+</html>

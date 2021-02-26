@@ -1,0 +1,185 @@
+body {
+    display: grid;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'VT323', monospace;
+    min-width: 1920px;
+}
+
+#webgl_content {
+    position: relative;
+}
+
+#webgl_content2 {
+    position: relative;
+}
+
+.container1 {
+    width: 99vw;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    top: 0%;
+}
+
+.container2 {
+    width: 99vw;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    color: white;
+    text-align: center;
+    top: 12%;
+
+}
+
+
+
+.container3 {
+    width: 99vw;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    color: white;
+    text-align: center;
+    top: 13%;
+    font-size: 3em;
+    left: 3%;
+}
+
+#container3_row1 {
+    font-size: 0.9em;
+}
+
+#rec {
+    color: red;
+    text-align: center;
+}
+
+#channel_count {
+    color: #00FF00;
+    text-align: left;
+}
+
+#inDev {
+    text-align: right;
+}
+
+.container4 {
+    width: 99vw;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    color: white;
+    text-align: center;
+    top: 75%;
+}
+
+#container4_row2 {
+    font-size: 1.7em;
+}
+
+
+
+.container5 {
+    width: 99vw;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    color: white;
+    text-align: center;
+    top: 85%;
+    font-size: 4em;
+}
+
+.sceneSwitcher {
+    width: 99vw;
+    height: 10%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    color: white;
+    top: 22%;
+    left: 0%;
+    font-size: 8em;
+
+}
+
+
+#switchLeft {
+    text-align: left;
+    margin: auto;
+}
+
+
+
+#switchRight {
+    text-align: right;
+    margin: auto;
+
+}
+
+
+#switchLeftButton {
+    font-family: 'VT323', monospace;
+    text-align: left;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+
+}
+
+#switchLeftButton:hover {
+    background-color: white;
+    color: black;
+}
+
+#switchLeftButton:active {
+    color: #333333;
+    font-size: 1.1em;
+}
+
+#switchRightButton {
+    font-family: 'VT323', monospace;
+    text-align: left;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+#switchRightButton:hover {
+    background-color: white;
+    color: black;
+}
+
+#switchRightButton:active {
+    color: #333333;
+    font-size: 1.1em;
+}
+
+.popupButton {
+    font-family: 'VT323', monospace;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.popupButton:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.popupButton:active {
+    font-size: 1.1em;
+    color: #333333;
+}
