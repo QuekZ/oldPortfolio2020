@@ -14,7 +14,7 @@ I wanted to make something unique and thats why i tried out the Three.js Library
 
 ![screenshot1](https://github.com/QuekZ/oldPortfolio2020/blob/main/images/screenshot1.PNG?raw=true)
 
-# This Screenshot is from the Gallery i made with Three.js(All Pictures belong to me):
+# This Screenshot is from the Gallery i made with Three.js(All Pictures were made by me):
 
 ![screenshot3](https://github.com/QuekZ/oldPortfolio2020/blob/main/images/screenshot3.PNG?raw=true)
             
